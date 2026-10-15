@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --blush: #fff5f8;
+  --ink: #3d2230;
+  --muted: #7a5364;
+  --brand: #c2256b;
+  --brand-hover: #a31d59;
+  --line: #f6c6d8;
+  --soft: #fff0f6;
+  --background: var(--blush);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-blush: var(--blush);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-line: var(--line);
+  --color-soft: var(--soft);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  height: 100%;
+  color-scheme: light;
+}
+
+body {
+  min-height: 100%;
+  background: var(--blush);
+  color: var(--ink);
+  font-family: var(--font-sans), sans-serif;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f4b4cb transparent;
+}
